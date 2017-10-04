@@ -19,7 +19,7 @@ https://github.com/appium/appium/blob/2fe7ea7b098ba2145e3c7b4cc31276a3e26921ec/s
     <dependency>
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
-      <version>1.3.0</version>
+      <version>5.0.3</version>
     </dependency>
     <dependency>
       <groupId>com.saucelabs</groupId>
@@ -73,8 +73,8 @@ https://github.com/appium/appium/blob/2fe7ea7b098ba2145e3c7b4cc31276a3e26921ec/s
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
         <version>3.1</version>
       </plugin>

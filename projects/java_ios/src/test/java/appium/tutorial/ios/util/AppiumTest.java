@@ -6,6 +6,7 @@ import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.junit.SauceOnDemandTestWatcher;
 import com.saucelabs.saucerest.SauceREST;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -15,7 +16,6 @@ import org.junit.runner.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.net.URL;
@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AppiumTest implements SauceOnDemandSessionIdProvider {
 
-    private AppiumDriver driver;
+    private AppiumDriver<MobileElement> driver;
 
     /**
      * Page object references. Allows using 'home' instead of 'HomePage' *
