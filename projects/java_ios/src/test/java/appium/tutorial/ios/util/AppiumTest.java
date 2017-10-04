@@ -80,14 +80,16 @@ public class AppiumTest implements SauceOnDemandSessionIdProvider {
 
     /**
      * Run before each test *
+     * @throws java.lang.Exception
      */
     @Before
     public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("appium-version", "1.1.0");
-        capabilities.setCapability("platformVersion", "7.1");
+//        capabilities.setCapability("appium-version", "1.1.0");
+        capabilities.setCapability("platformVersion", "11.0");
         capabilities.setCapability("platformName", "ios");
         capabilities.setCapability("deviceName", "iPhone Simulator");
+        capabilities.setCapability("automationName", "XCUITest");
 
         // Set job name on Sauce Labs
         capabilities.setCapability("name", "Java iOS tutorial " + date);
